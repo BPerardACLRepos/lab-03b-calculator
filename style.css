@@ -1,0 +1,100 @@
+/* Default Settings */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container div, Header, Main, Footer Styles */
+
+.site-container {
+    margin: 5% 15%;
+    padding: .25rem 1rem;
+    border: 10px solid;
+    border-image: linear-gradient(45deg,goldenrod, teal, purple, goldenrod, pink) 1;
+    box-shadow: inset 0 0 1px 1px greenyellow, 0 0 1px 1px greenyellow, 0 0 23px 7px slateblue;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    /* placeholder for future changes */
+}
+
+footer {
+    position: absolute;
+    left: .5rem;
+    bottom: .25rem;
+}
+
+/* Divs #user-inputs & #calculator-buttons */
+
+#user-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+/* Individual Elements */
+
+h1 {
+    margin: 0;
+    padding: .5rem;
+    color: darkslateblue;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#user-input-one,
+#user-input-two {
+    padding: 0 1rem;
+    box-shadow: inset 0 0 10px pink;
+    border-radius: 5px;
+}
+
+#user-directions {
+    margin: .5rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+#addition,
+#subtraction,
+#division,
+#multiplication {
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: grey;
+    color: gold;
+    border-radius: 10px;
+}
+
+#answer {
+    margin: 0;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color:tomato;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer p {
+    color:green;
+}
