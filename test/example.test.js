@@ -1,18 +1,60 @@
 // IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { getDifference, getDividend, getProduct, getSum } from '../utils.js'
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = false;
+// getSum tests
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
+test('it should return 8 when provided 5 and 3', (expect) => {
+    const expected = 8;
+    const actual = getSum(5, 3);
+    expect.equal(actual, expected);
+});
+
+test('it should return -8 when provided -5 and -3', (expect) => {
+    const expected = -8;
+    const actual = getSum(-5, -3);
+    expect.equal(actual, expected);
+});
+
+// getDifference tests
+
+test('it should return 8 when provided 15 and 7', (expect) => {
+    const expected = 8;
+    const actual = getDifference(15, 7);
+    expect.equal(actual, expected);
+});
+
+test('it should return -8 when provided -5 and 3', (expect) => {
+    const expected = -8;
+    const actual = getDifference(-5, 3);
+    expect.equal(actual, expected);
+});
+
+// getDividend tests
+
+test('it should return 8 when provided 120 and 15', (expect) => {
+    const expected = 8;
+    const actual = getDividend(120, 15);
+    expect.equal(actual, expected);
+});
+
+test('it should return -8 when provided 120 and -15', (expect) => {
+    const expected = -8;
+    const actual = getDividend(120, -15);
+    expect.equal(actual, expected);
+});
+
+// getProduct tests
+
+test('it should return 8 when provide 2 and 4', (expect) => {
+    const expected = 8;
+    const actual = getProduct(2, 4);
+    expect.equal(actual, expected);
+});
+
+test('it should return -8 when provided 32 and -0.25', (expect) => {
+    const expected = -8;
+    const actual = getProduct(32, -0.25);
     expect.equal(actual, expected);
 });

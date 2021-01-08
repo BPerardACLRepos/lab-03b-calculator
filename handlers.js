@@ -24,4 +24,5 @@ export function myClickHandler(operator) {
     } else {
         alert(`What's the sound of one hand clapping? Please enter two numbers.`)
     }
+
 }
