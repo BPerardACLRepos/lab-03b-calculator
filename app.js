@@ -1,11 +1,10 @@
-import { myAdditionHandler, myDivisionHandler, myMultiplicationHandler, mySubtractionHandler } from './handlers.js';
+import { myClickHandler } from './handlers.js';
 
-const additionButton = document.querySelector('#addition');
-const subtractionButton = document.querySelector('#subtraction');
-const divisionButton = document.querySelector('#division');
-const multiplicationButton = document.querySelector('#multiplication');
+const calculatorButtons = document.querySelector('#calculator-buttons');
 
-additionButton.addEventListener('click', myAdditionHandler);
-subtractionButton.addEventListener('click', mySubtractionHandler)
-divisionButton.addEventListener('click', myDivisionHandler);
-multiplicationButton.addEventListener('click', myMultiplicationHandler);
+calculatorButtons.addEventListener('click', (e) => {
+    if (e.target.tagName === 'BUTTON') {
+        const operator = e.target.textContent;
+        myClickHandler(operator);
+    }
+});
